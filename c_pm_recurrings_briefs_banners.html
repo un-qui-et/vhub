@@ -1,0 +1,175 @@
+<html>
+
+<head>
+  <script src="jquery-3.6.3.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <title>Knowledge Base </title>
+
+  <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script src="aeweb.js"></script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var comp=AdobeAn.getComposition("E3F7783CE049468CB946FD0BA10208FF");
+	var lib=comp.getLibrary();
+	handleComplete({},comp);
+}
+function handleComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	exportRoot = new lib.Untitled3();
+	stage = new lib.Stage(canvas);
+	stage.enableMouseOver();	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.framerate = lib.properties.fps;
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+</script>
+</head>
+
+<body onload="init();" style="margin:0px;">
+  <header>
+    <img class="headerimg" src="images/header.png">
+    <!-- <h1>Resources and Documentation Page</h1> -->
+    <a href="https://teams.microsoft.com/l/channel/19%3avnqQk7cDaOLzOfLyb8_unKdnLZNtxMjCTtTl9j4Hqbg1%40thread.tacv2/General?groupId=bef22b82-73c7-40eb-9857-884b3b96c43a&tenantId=e519c2e6-bc6d-4fdf-8d9c-923c2f002385">Join our Teams Group</a>
+  </header>
+  <nav>
+
+    <p id="vt-placeholder"></p>
+    <p id="dt-placeholder"></p>
+    <p id="pm-placeholder"></p>
+    <p id="faq-placeholder"></p>
+
+     <script>
+        $(function(){
+          $("#vt-placeholder").load("nav_vt.html");
+          $("#dt-placeholder").load("nav_dt.html");
+          $("#pm-placeholder").load("nav_pm.html");
+          $("#faq-placeholder").load("nav_faq.html");
+        });
+    </script>
+   
+
+  </nav>
+
+  <main>
+
+      <div class="vt_page">
+          <div>
+                <H4> Recurrent Briefs </H4>
+                <H1> Display Banners</H1>
+                <br><br>
+                <H2> About  </H2>
+                <br>
+          </div> 
+          <!-- [[[[  Video Team Conventions Content  ------>
+          <div id="Team Onboarding" class="vt_threecol_grid">  
+              <!-- [[[[[[ Video Practices     -->
+                <!-- Column 1 -->  
+                <div>
+                  <HR>
+                  <p><b> What are display banners </b></p>
+                </div>
+                <!-- Column 2 --> 
+                <div>
+                  <HR>
+                  <p> Display banners are the creative ads that are shown along the top, side, or bottom of a website. Examples can be found on our teams resource folder. 
+                  </p> 
+                  <br>
+                  <img src="images/pm/pm_rb_disp_banner_sample.jpg" width="680px;">
+
+                  
+                  <br>
+                </div>
+                <!-- Column 3 -->
+                <div>
+                  <p> 
+                    <Hr>
+                      <p>//temp<p>
+                  </p>
+                </div>
+                <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                <div>
+                  <HR>
+                  <p><b> What is the video team role when creating display banners </b></p>
+                </div>
+                <!-- Column 2 --> 
+                <div>
+                  <HR>
+                  <p> Banners are the creative ads that are shown along the top, side, or bottom of a website.  <br><br><br><br><br>
+                  </p>
+                </div>
+                <!-- Column 3 -->
+                <div>
+                  <p> 
+                    <Hr>
+                      <p>//temp<p>
+                  </p>
+                </div>
+                <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                <div>
+                  <HR>
+                  <p><b>At which stage is the video team involved when creating display banners </b></p>
+                </div>
+                <!-- Column 2 --> 
+                <div>
+                  <HR>
+                  <p> Banners are the creative ads that are shown along the top, side, or bottom of a website.  <br><br>
+                  </p>
+                </div>
+                <!-- Column 3 -->
+                <div>
+                  <p> 
+                    <Hr>
+                      <p>//temp<p>
+                  </p>
+                </div>
+
+                <div>
+                  <HR>
+                  <p><b>Video Process Prototype</b></p>
+                </div>
+                <!-- Column 2 --> 
+                <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:680px; height:368px">
+                  <HR>
+                      <canvas id="canvas" width="680" height="368" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+                      <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:680px; height:368px; position: absolute; left: 0px; top: 0px; display: block;">
+                  </div>
+                  
+                  
+                </div>
+                <!-- Column 3 -->
+                <div>
+                  <p> 
+                    <Hr>
+                      <p>//temp<p>
+                  </p>
+                </div>
+              <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            </div>
+
+          <div>
+            <br><br>
+            <H2> Key information when briefing Display Banners?  </H2>
+            <br>
+            <HR>
+            <br>
+        </div>
+         
+     </div>
+
+  </main>
+</body>
+
+</html>

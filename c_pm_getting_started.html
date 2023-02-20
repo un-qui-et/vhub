@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <script src="jquery-3.6.3.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <title>Knowledge Base </title>
+</head>
+
+<body>
+  <header>
+    <img class="headerimg" src="images/header.png">
+    <!-- <h1>Resources and Documentation Page</h1> -->
+    <a href="https://teams.microsoft.com/l/channel/19%3avnqQk7cDaOLzOfLyb8_unKdnLZNtxMjCTtTl9j4Hqbg1%40thread.tacv2/General?groupId=bef22b82-73c7-40eb-9857-884b3b96c43a&tenantId=e519c2e6-bc6d-4fdf-8d9c-923c2f002385">Join our Teams Group</a>
+  </header>
+  <nav>
+
+    <p id="vt-placeholder"></p>
+    <p id="dt-placeholder"></p>
+    <p id="pm-placeholder"></p>
+    <p id="faq-placeholder"></p>
+
+     <script>
+        $(function(){
+          $("#vt-placeholder").load("nav_vt.html");
+          $("#dt-placeholder").load("nav_dt.html");
+          $("#pm-placeholder").load("nav_pm.html");
+          $("#faq-placeholder").load("nav_faq.html");
+        });
+    </script>
+   
+
+  </nav>
+
+  <main>
+
+      <div class="vt_page">
+        <div class="pm_indexgrid"> 
+            <div>
+              <H1> Welcome, </H1>
+               <br>
+               <p>Here's the section where we discuss all video production and animation related topics. <br><br> Here you’ll find the information that create our collaborative workflow.  The topics discussed here help us align the communication across all  Barclaycard teams working on video or animation deliverables. <br><br> If this is your first time collaborating with the video team or if you have any questions please feel free to reach out and we’ll do our best to help you.  <br><br>
+              
+               </p>
+            </div>
+             <div id="pm_homeimage">
+                   <img src="images/pm/pm_getting_started.png"  width="90%" height="auto":>
+            </div> 
+        </div>
+        <div>
+          <br>
+          <hr>
+          <p> If you're just startings please start here >> Onboarding </p>
+         
+        </div>
+        
+
+     </div>
+
+  </main>
+</body>
+
+</html>

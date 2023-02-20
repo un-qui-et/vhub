@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+/*  //////////////////////////////////////////////////////////////
+//////  Page Structure and Shared CSS - Home
+///////////////////////////////////////////////////////////////*/
+
+:root {
+  --sidenav-width: 15rem;
+  --navbar-height: 3.5rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a { 
+  text-decoration: none;
+  color: inherit;
+}
+
+HR {
+  margin-bottom: 8px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  
+  font-family: "Open Sans", sans-serif;
+}
+
+.headerimg{
+  margin-left: -10px;
+  max-height: 100%;
+  width: auto;
+}
+
+header {
+  position: fixed;
+  inset: 0 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: var(--navbar-height);
+  padding-inline: 2rem;
+  border-bottom: 1px solid lightgrey;
+  background-color: white;
+}
+
+/*  //////////////////////////////////////////////////////////////
+//////  Navigation 
+///////////////////////////////////////////////////////////////*/
+
+nav {
+  position: fixed;
+  inset: var(--navbar-height) auto 0 0;
+  width: var(--sidenav-width);
+  padding-left: 2.1rem;
+  padding-top: 1rem;
+  
+  display: flex;
+  flex-flow: column;
+  gap: 0.em;
+  
+  border-right: 1px solid lightgrey;
+  background-color: white;
+}
+
+nav p {
+  font-size: 15px;
+}
+
+.subnav {
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+nav p:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  position: relative;
+  
+  display: flex;
+  align-items: center;
+  
+
+  margin-left: 0.8rem;
+  padding-top: 0.1rem;
+  color: gray;
+  font-size: 14px;
+  transition: 0.3s;
+
+}
+
+nav a::before {
+  position: absolute;
+  left: -0.95rem;
+  
+  transition: inherit;
+  opacity: 0;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+nav a:hover::before {
+  content: "l";
+  padding: rem;
+  opacity: 1;
+}
+
+nav a:active {
+  color: blue;
+}
+
+/*  //////////////////////////////////////////////////////////////
+//////  Main 
+///////////////////////////////////////////////////////////////*/
+
+main {
+  flex: 1;
+  
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+  
+  padding: 2rem;
+  
+  margin-top: var(--navbar-height);
+  margin-left: var(--sidenav-width);
+}
+
+/*  //////////////////////////////////////////////////////////////
+//////  Page Specific CSS and Grids
+///////////////////////////////////////////////////////////////*/
+
+ /* [[[[[[[ Home Page Index and Styling  -----  */
+
+.page {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.indexgrid {
+  padding-top: 1%;
+  display: grid;
+  grid-template-columns: 260px 750px;
+}
+
+.indexgrid H1 {
+  color: #4C297E;
+  font-size: 28px;
+}
+
+
+.indexgrid span {
+  color: #4C297E;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+ /*  Home Page Index and Styling ]]]]]]]]]]]]] -----  */
+
+
+
+
+

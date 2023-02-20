@@ -1,0 +1,204 @@
+<html>
+<!-- //////////////////////////////////////////////////////////////
+////// Onboarding - Home
+/////////////////////////////////////////////////////////////// -->
+<head>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="../main.css">
+  <title>Knowledge Base </title>
+</head>
+
+
+
+<!-- [[[[[[[ Body Start  ----- -->
+<body>
+
+
+<!-- [[[[[[[ Header Start  ----- -->
+  <header>
+    <a href="../index.html">
+    <img class="headerimg" src="../images/header.png">
+    </a>
+    <!-- <h1>Resources and Documentation Page</h1> -->
+    <a href="https://teams.microsoft.com/l/channel/19%3avnqQk7cDaOLzOfLyb8_unKdnLZNtxMjCTtTl9j4Hqbg1%40thread.tacv2/General?groupId=bef22b82-73c7-40eb-9857-884b3b96c43a&tenantId=e519c2e6-bc6d-4fdf-8d9c-923c2f002385">Join our Teams Group</a>
+  </header>
+<!-- Header End ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]] -->
+
+<!-- [[[[[[[ Navigation Bar --------------   -->
+  <nav>
+      <p id="vt-placeholder">
+      <p id="dt-placeholder"></p>
+      <p id="pm-placeholder"></p>
+      <p id="faq-placeholder"></p>
+  
+       <script>
+          $(function(){
+            $("#vt-placeholder").load("nav_vt.html");
+            $("#dt-placeholder").load("nav_dt.html");
+            $("#pm-placeholder").load("nav_pm.html");
+            $("#faq-placeholder").load("nav_faq.html");
+          });
+      </script>
+  </nav>
+<!-- Navigation Bar End ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]] -->
+
+<!-- *******************************************************************************************
+***** Main  
+************************************************************************************************ -->
+  <main>
+
+  <!-- ////// Page Start  - 
+    /////////////////////////////////////////////////////////////// -->
+      <div class="vt_page">
+       <!-- ||||||||| Video Team Onboarding  |||||||  -->
+         <div>
+              <H2> Video Team <br> Onboarding </H2>
+              <br>
+         </div> 
+      <!-- [[[[  Video Team Onboarding Content  ------>
+        <div id="Team Onboarding" class="vt_threecol_grid">  
+            <!-- [[[[[[ Getting Started   -->
+              <!-- Column 1 -->  
+              <div>
+                <HR>
+                <p>Getting Started </p>
+              </div>
+              <!-- Column 2 --> 
+              <div>
+                <HR>
+                <p> Welcome to the Video and Animation Team. This section will walk you through the conventions and workflows currently used at the account and provide guidance to align your workspace so everyone on the team can collaborate and share files without issues.
+                </p>
+              </div>
+              <!-- Column 3 -->
+              <div>
+                <p> </p>
+              </div>
+           <!--  End Getting Started ]]]]]]]]]] -->
+
+            <!-- [[[[[[ Before you Start   -->
+              <!-- Column 1 --> 
+              <div>
+                <HR>
+                <p>Before you start </p>
+              </div>
+              <!-- Column 2 -->     
+              <div>
+                <HR>
+                  <p> 
+                      👉 Please check your assigned <b> name@oliver.agency </b>e-mail is working <br><br>
+                      👉 The application <b>Box</b> is installed on your machine <br><br>
+                      👉You received an invite from Box saying <b>“You’ve’ being invited to work at "Active_BC_projects"</b>  <br><br>
+                      👉  We’ll try to have these arranged before you start, if you have any issues please contact <b>@traffic or the @videoteam </b> 
+                    </p>  
+                </div>
+              <!-- Column 3 -->   
+                <div> 
+                  <img src="../images/video/onboardin_beforeyoustart.png" width="300" height="auto"> 
+                </div>
+            <!-- End Before you Start ]]]]]]]]]]  -->
+        </div>
+      <!-- End Video Team Onboarding  ]]]]]]]]] -->
+
+      <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+
+      <!-- ||||||||| Barclaycard File System   |||||||  -->
+        <div>
+            <h2> Barclaycard <br> file system </H2>
+            <br>
+        </div>
+      <!-- [[[[  BC File System Content   ------>
+        <div id="bc_file_system" class="vt_threecol_grid">  
+          <!-- [[[[[[ Working from the Cloud   -->
+           <!-- Column 1 --> 
+            <div>
+              <HR>
+              <p> Working from the cloud </p>
+            </div>
+           <!-- Column 2 -->  
+            <div>
+              <HR>
+               <p> Barclaycard video projects are stored on Oliver’s server and are accessed through the application BOX. 
+               Check the application is up and running and follow the received e-mail instructions to get access to the folder <b>"Active_BC_projects"</b> our video team cloud folder </p>
+               <br>
+               <img src="../images/video/box_Email.png" width="670" height="auto" >  
+               <br>  <br>
+              
+                This gives you access to the the folder where all active projects are kept. Here you’ll be able to access the files for your assigned brief or setup a new project folder if the project you’re working on is new.
+
+               </p>
+            </div>
+            <!-- Column 3 -->   
+              <div>
+                <img src="../images/video/box_email_s1.png"   style="padding-top:130px; padding-left:0px;" width="300" height="auto"> 
+                <img id="ic_folder" src="../images/video/box_email_folder.png" style="padding-top:180px; padding-left:0px;" width="80" height="auto"> 
+                <p style="padding-left: 90px; padding-top:200px;"> Preview <p>
+
+               <!-- ////// -->
+               <!-- Trigger/Open The Modal -->                    
+                    <div id="myModal" class="modal">
+                      <div class="modal-content">
+                        <img id="imgActive" src="../images/video/box_email_window.png" width="500" height="auto">
+                        <span class="close">&times;</span>    
+                        <p id="caption"> Some text in the Modal..</p>
+                        </div>
+                    </div>
+               </div>
+              <!--  -->
+            <!-- [[[[[[ File Structure Footer   -->
+              <!-- Column 1 --> 
+              <div>
+                <HR>
+                <p> Video practices, <br>file handling and <br> folder structure  </p>
+              </div>
+              <!-- Column 2 -->     
+              <div>
+                <HR>
+                  <p> 
+                      Now that your machine is ready to go. Let's have a look at the  conventions and folder structures used in the account. <br><br>
+                  </p>  
+                </div>
+               <!-- Column 3 -->  
+                <div> 
+                  <HR>
+                  <a href="a_vt_team_conventions.html"> 
+                   <p>Click below to find out more about our </p>  <span id="vt_filestructure">  👉 📚 Team Conventions </span>  
+                </a>
+                </div>
+            <!-- End Before you Start ]]]]]]]]]]  -->
+
+         </div>
+          <!--  End of BC File System  ]]]]]]]]]] -->
+
+
+  </main>
+<!-- Main End ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]] -->
+
+<!-- /////// Modal Window -->
+  <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+var btfolder = document.getElementById("ic_folder");
+var modalImg = document.getElementById("imgActive");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks the button, open the modal 
+btfolder.onclick = function() {
+  modal.style.display = "block";
+  modalImg.src = modalImg.src;
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</body>
+
+</html>
